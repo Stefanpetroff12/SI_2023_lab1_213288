@@ -1,0 +1,34 @@
+1.Инсталирав Git Bash, а на Github имав предходно работено.
+2.Името на гранката го сменив во Github во branch >>> edit >>> rename.
+3.ВО Github во your repositories стиснав на new и потоа го именував репото SI_2023_lab1_213288 и стиснав на private и create. 
+4.Креирав директориум и го нареков SI_2023_lab1_213288, а потоа во cmd влегов во фолдерот и напишав git init.
+5.Напишав git remote add origin https://github.com/Stefanpetroff12/SI_2023_lab1_213288.git
+6.notepad README.md
+  git add . којшто го додади фајлот
+  git commit -m "Initial commit"
+7.notepad SILab1.java и го додадов текстот во линкот па потоа направив
+  git add . којшто го додади фајлот
+  git commit -m "Add java class"
+8.Со git push origin master ги додадов на Github
+9.Со git checkout -b bug креирав гранка и со git checkout master се вратив на мастер за и другите две гранки(bug2/bug3) да ги креирам на мастер со истите постапки.
+10.git checkout bug1
+11.Грешката беше што имаше <=, а треба да има само < за да оди n броеви а не n+1, потоа направив git add SILab1.java па git commit -m "Fix wrong loop for reading"
+12.git checkout bug2
+13.Откако ја поправив грешката во кодот 0 во 1 за непарни броеви направив git add SILab1.java па git commit -m "Fix wrong condition in filterOddNumbers"
+14.git checkout bug3
+15.Потоа ја поправив грешката во кодот  за непарни броеви направив git add SILab1.java па git commit -m "Fix method sumEvenNumbers"
+16.Им направив git checkout bug3 потоа git push origin bug3, git checkout bug2 потоа git push origin bug2, git checkout bug1 потоа git push origin bug1
+17.git checkout master
+18.git merge bug1 со тоа што со merge и направивме на гранката bug1 спојување за master и нејзините комити се на мастер гранката.
+19.git push origin master пошо другите гранки се векје пушнати
+20.git merge bug2 ми се појави нешто за пишување не сум сигурен што но ми пишуваше дека ако напишам :qw ќе се исклучи и се исклучи откако напишав, а после тоа имав проблеми малку но се снајдов и успеав да ја спојам bug2 со master
+21.git push origin master
+22.git checkout bug3
+23.git rebase master
+24.git checkout master
+25.git merge bug3 откако и направив rebase на bug3 и ја припоив со master и на крајот остана само мастер која ќе биде пушната во remote repoto во следниот чекор
+26.git push origin master
+27.notepad logs.txt
+   notepad 213288.txt
+   git commit -m "Final commit"
+28.git push origin master
